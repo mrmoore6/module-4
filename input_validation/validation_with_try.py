@@ -7,7 +7,7 @@ This program takes 3 tests input and return and average of them.
 """
 NUMBER_TESTS = 3
 def average(score1,score2,score3):
-    if score1 < 0 or score2 < 0  or score3 < 0:
+    if score1 < 0 or score2 < 0 or score3 < 0:
         raise ValueError
 
 
@@ -17,8 +17,16 @@ if __name__ == '__main__':
     last_name = input("Enter Last Name: ")
     first_name = input("Enter First Name: ")
     age = int(input("Enter Age: "))
-    average_scores = average(10 , 100 ,90 )
-    print(f"{last_name}, {first_name} age: {age}", "average grade: {:.2f}".format(average_scores))
+    first_score = int(input("Enter your first score: "))
+    second_score = int(input("Enter your second score: "))
+    third_score = int(input("Enter your third score: "))
+    try:
+        average_scores = average(first_score,second_score,third_score)
+    except ValueError:
+        print("Enter only positive scores!")
+    else:
+        print(f"{last_name}, {first_name} age: {age}", "average grade: {:.2f}".format(average_scores))
+
 
 #input 1 Moore,Michael,22,99,99,94 output 1 Moore, Michael age: 22 average grade: 97.33
 #input 2 Moore,Michael,22,87,56,34 output 2 Moore, Michael age: 22 average grade: 59.00
