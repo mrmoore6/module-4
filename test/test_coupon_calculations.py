@@ -18,10 +18,10 @@ class test(unittest.TestCase):
         self.assertAlmostEqual(36.77, coupon.calculate_price(38.99, 5, 20), 2)
         self.assertAlmostEqual(33.70, coupon.calculate_price(36.99, 10, 10), 2)
     def test_price_under_over_fifty(self):
-        self.assertAlmostEqual(56.23, coupon.calculate_price(57.99, 5, 10), 2)
-        self.assertAlmostEqual(89.23, coupon.calculate_price(85.99, 5, 15), 2)
-        self.assertAlmostEqual(99.23, coupon.calculate_price(110.99, 5, 20), 2)
-        self.assertAlmostEqual(65.23, coupon.calculate_price(75.99, 10, 10), 2)
+        self.assertAlmostEqual(62.50, coupon.calculate_price(57.99, 5, 10), 2)
+        self.assertAlmostEqual(72.97, coupon.calculate_price(85.99, 5, 15), 2)
+        self.assertAlmostEqual(89.88, coupon.calculate_price(110.99, 5, 20), 2)
+        self.assertAlmostEqual(62.95, coupon.calculate_price(75.99, 10, 10), 2)
 
 if __name__ == '__main__':
     unittest.main()
