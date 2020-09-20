@@ -1,3 +1,10 @@
+"""
+Program: coupon_calculations.py
+Author: Michael Moore
+Date: 9/20/20
+
+This program calculates the price including two different coupons and tax and shipping.
+"""
 def calculate_price(price,cash_coupon,percent_coupon):
     with_cashcoupon = price - cash_coupon
     with_percentcoupon = with_cashcoupon - (with_cashcoupon * percent_coupon/100)
