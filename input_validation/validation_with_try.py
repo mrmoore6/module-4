@@ -1,9 +1,9 @@
 """
-Program: average_scores.py
+Program: validation_with_try.py
 Author: Michael Moore
-Last Date Modified: 9/12/20
+Last Date Modified: 9/20/20
 
-This program takes 3 tests input and return and average of them.
+This program takes 3 tests input and return and average of them throws ValueError with negative inputs.
 """
 NUMBER_TESTS = 3
 def average(score1,score2,score3):
